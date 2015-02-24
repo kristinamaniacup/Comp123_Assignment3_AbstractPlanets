@@ -22,26 +22,12 @@ namespace Assignment3_AbstractPlanets
         public bool HasMoons()
         {
 
-            if (MoonCount > 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return (MoonCount > 0) ? true : false;
         }
 
         public bool Habitable()
         {
-            if (_oxygen == true)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return this._oxygen; 
         }
     }
 }

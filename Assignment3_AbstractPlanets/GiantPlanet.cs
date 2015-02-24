@@ -19,13 +19,6 @@ namespace Assignment3_AbstractPlanets
             this._type = type;
         }
 
-        //CONSTRUCTOR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public GiantPlanet(string name, double diameter, double mass, string type)
-        {
-            
-        }
-
-
         //PUBLIC METHOD(S) +++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public bool HasMoons()
         {
@@ -38,18 +31,13 @@ namespace Assignment3_AbstractPlanets
             {
                 return false;
             }
+
+            //alternative way to do this => "return (this._moonCount > 0) ? true : false; 
         }
 
         public bool HasRings()
         {
-            if (RingCount > 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return (RingCount > 0) ? true : false;
         }
     }
 
