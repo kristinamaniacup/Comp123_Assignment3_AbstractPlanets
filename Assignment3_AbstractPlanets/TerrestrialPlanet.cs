@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment3_AbstractPlanets
 {
-    class TerrestrialPlanet : Planet
+    class TerrestrialPlanet : Planet, IHasMoons, IHabitable
     {
         //PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++
         private bool _oxygen;
@@ -18,6 +18,30 @@ namespace Assignment3_AbstractPlanets
             this._oxygen = oxygen;
         }
 
+        //PUBLIC METHODS ++++++++++++++++++++++++++++++++++++++++++++++++
+        public bool HasMoons()
+        {
 
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool Habitable()
+        {
+            if (_oxygen == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

@@ -8,5 +8,6 @@ namespace Assignment3_AbstractPlanets
 {
     interface IHasRings
     {
+        bool HasRings();
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assignment3_AbstractPlanets
 {
-    interface IHasMoons
+    interface IHabitable
     {
-        bool HasMoons();
+        bool Habitable();
     }
 }

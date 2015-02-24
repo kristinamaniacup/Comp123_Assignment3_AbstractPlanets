@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment3_AbstractPlanets
 {
-    class GiantPlanet : Planet
+    class GiantPlanet : Planet, IHasMoons, IHasRings
     {
         //PRIVATE INSTANCE VARIABLES ++++++++++++++++++++++++++++++++++++++++++++++
         private string _type;
@@ -18,6 +18,13 @@ namespace Assignment3_AbstractPlanets
         {
             this._type = type;
         }
+
+        //CONSTRUCTOR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        public GiantPlanet(string name, double diameter, double mass, string type)
+        {
+            
+        }
+
 
         //PUBLIC METHOD(S) +++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public bool HasMoons()

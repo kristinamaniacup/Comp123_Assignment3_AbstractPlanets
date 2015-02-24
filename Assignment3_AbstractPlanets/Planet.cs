@@ -103,5 +103,6 @@ namespace Assignment3_AbstractPlanets
         {
             return this.Name + " is the planet, " + this.Diameter + " is the diameter and " + this.Mass + " is it's mass.";
         }
+
     }
 }
