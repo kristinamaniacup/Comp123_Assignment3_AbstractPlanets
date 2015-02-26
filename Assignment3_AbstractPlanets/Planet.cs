@@ -20,7 +20,7 @@ namespace Assignment3_AbstractPlanets
         //PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public double Diameter
         {
-            get
+            get //read-only
             {
                 return this._diameter;
             }
@@ -28,7 +28,7 @@ namespace Assignment3_AbstractPlanets
 
         public double Mass
         {
-            get
+            get //read-only
             {
                 return this._mass;
             }
@@ -36,11 +36,11 @@ namespace Assignment3_AbstractPlanets
 
         public int MoonCount
         {
-            get
+            get //read
             {
                 return this._moonCount;
             }
-            set
+            set //write
             {
                 this._moonCount = value;
             }
@@ -101,7 +101,7 @@ namespace Assignment3_AbstractPlanets
         //PUBLIC METHOD(S) +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public override string ToString()
         {
-            return this.Name + " is the planet, " + this.Diameter + " is the diameter and " + this.Mass + " is it's mass.";
+            return this.Name + " is the planet, " + this.Diameter + " is it's diameter and " + this.Mass + " is it's mass.";
         }
 
     }
